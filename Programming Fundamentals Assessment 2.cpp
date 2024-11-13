@@ -2,8 +2,35 @@
 
 using namespace std;
 
+void location_mainFoyer(int direction = 0)
+{
+    cout << "[LOCATION] Main Foyer\n\n";
+
+    cout << "Where do you want to go?\n\n1. NORTH\n2. EAST\n3. SOUTH\n4. WEST\n\n> "';
+    cin >> direction;
+
+    switch (direction)
+    {
+    case 1:
+        cout << "You go north" << endl;
+        break;
+    case 2:
+        cout << "You go east" << endl;
+        break;
+    case 3:
+        cout << "You go south" << endl;
+        break;
+    case 4:
+        cout << "You go west" << endl;
+        break;
+    }
+}
+
 int main()
 {
+    // Prologue
+    int storyDecision1 = 0;
+
     cout << "Text-based Adventure Game" << endl;
     cout << "-------------------------\n\n";
 
@@ -20,6 +47,23 @@ int main()
     cout << "and somehow, the interior of this sealed building is colder than outside.\n\n";
 
     cout << "1. Take a step forward\n2. Wait\n\n> ";
+    cin >> storyDecision1;
+
+    if (storyDecision1 == 1)
+    {
+        cout << "You take a step forward - and the door slams behind you!" << endl;
+        cout << "You try to pry it open, but no matter what, it won't open!" << endl;
+        cout << "[NEW OBJECTIVE] Escape!\n\n";
+
+        location_mainFoyer();
+    }
+   while (storyDecision1 == 2)
+    {
+        cout << "...\n\n";
+
+        cout << "1. Take a step forward\n2. Wait\n\n> ";
+        cin >> storyDecision1;
+    }
 
 }
 
