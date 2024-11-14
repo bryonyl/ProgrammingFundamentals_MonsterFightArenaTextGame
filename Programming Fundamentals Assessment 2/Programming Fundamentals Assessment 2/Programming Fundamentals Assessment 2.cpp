@@ -15,6 +15,14 @@ int speedStatPoints = 0;
 int vitalityStatPoints = 0;
 int defenceStatPoints = 0;
 
+bool yesOrNoInput()
+{
+	if
+	{
+		cout << 
+	}
+}
+
 void statPointAllocation()
 {
 	cout << "Allocate your stat points!" << endl;
@@ -27,6 +35,32 @@ void statPointAllocation()
 	cout << "How many points would you like to allocate in \033[33mStrength\033[0m?\n\n";
 	cout << "> ";
 	cin >> statPointInput;
+	strengthStatPoints = statPointInput;
+	statPointInput = 0; // Resets statPointInput to allocate the next stat points
+
+	cout << "How many points would you like to allocate in \033[34mSpeed\033[0m\n\n";
+	cout << "> ";
+	cin >> statPointInput;
+	speedStatPoints = statPointInput;
+	statPointInput = 0;
+
+	cout << "How many points would you like to allocate in \033[32mVitality\033[0m\n\n";
+	cout << "> ";
+	cin >> statPointInput;
+	vitalityStatPoints = statPointInput;
+	statPointInput = 0;
+
+	cout << "How many points would you like to allocate in \033[35mDefence\033[0m\n\n";
+	cout << "> ";
+	cin >> statPointInput;
+	defenceStatPoints = statPointInput;
+	statPointInput = 0;
+
+	if (unassignedStatPoints <= 20)
+	{
+		cout << "You still have " << unassignedStatPoints << " unassigned stat points!" << endl;
+		cout << "Continue? 
+	}
 
 }
 
@@ -82,8 +116,8 @@ int main()
 	cout << "Today is your first day as a professional monster fighter." << endl;
 	cout << "Under the watch of thousands of people, fight to the death!!!\n\n";
 
-	mainMenu();
 	statPointAllocation();
+	mainMenu();
 
 	return 0;
 }
