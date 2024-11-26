@@ -1,24 +1,8 @@
 #include <iostream>
-#include <windows.h>
-#include "Player.cpp"
+#include "Player.h"
 
 // Main menu variables
 int menuInput = 0;
-
-void fight()
-{
-
-}
-
-void shop()
-{
-	
-}
-
-void accessInventory()
-{
-
-}
 
 void mainMenu()
 {
@@ -37,11 +21,11 @@ void mainMenu()
 	switch (menuInput)
 	{
 	case 1:
-		fight();
+		//fight();
 	case 2:
-		shop();
+		//shop();
 	case 3:
-		accessInventory();
+		//accessInventory();
 	case 4:
 		std::cout << "Exiting game..." << std::endl;
 		exit(1);
@@ -50,6 +34,12 @@ void mainMenu()
 
 int main()
 {
+	// Objects
+	Player player1("Name", 0, 0, 0, 0, 0, 0, true); // Makes a player object
+
+	Enemy enemy1 = Enemy("Slime", 20, 2, 5, true);
+	Enemy enemy2 = Enemy("Zombie", 40, 5, 7, true);
+
 	std::cout << "+---------------------+" << std::endl;
 	std::cout << "| \033[31mMONSTER FIGHT ARENA\033[0m |" << std::endl;
 	std::cout << "+---------------------+\n\n";
@@ -57,7 +47,10 @@ int main()
 	std::cout << "Today is your first day as a professional monster fighter." << std::endl;
 	std::cout << "Under the watch of thousands of people, fight to the death!!!\n\n";
 
-	statPointAllocation();
+	player1.statPointAllocation();
+
+	std::cout << "Your first weapon is a Flimsy Stick. Earn money by fighting monsters, and upgrade your weapons in the Shop!\n\n";
+
 	mainMenu();
 
 	return 0;
