@@ -1,0 +1,9 @@
+#pragma once
+#include <iostream>
+#include <stdlib.h>
+#include <time.h>
+#include <Windows.h>
+#include "Player.h"
+#include "Enemy.h"
+#include "Weapons.h"
+#include "Objects.h"

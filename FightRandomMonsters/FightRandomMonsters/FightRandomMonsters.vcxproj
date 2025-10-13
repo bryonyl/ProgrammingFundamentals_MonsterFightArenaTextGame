@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{41749cb9-5fcd-489d-888b-71c02ebc8ef6}</ProjectGuid>
-    <RootNamespace>ProgrammingFundamentalsAssessment2</RootNamespace>
+    <ProjectGuid>{097c0d3c-1137-4c17-a8cd-2f69594a713d}</ProjectGuid>
+    <RootNamespace>FightRandomMonsters</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -129,15 +129,19 @@
   <ItemGroup>
     <ClCompile Include="Battle.cpp" />
     <ClCompile Include="Enemy.cpp" />
-    <ClCompile Include="Inventory.cpp" />
-    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Shop.cpp" />
+    <ClCompile Include="Main Menu.cpp" />
+    <ClCompile Include="Objects.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Player Setup.cpp" />
+    <ClCompile Include="Weapons.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Objects.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="Weapon.h" />
+    <ClInclude Include="Shared Libraries and Headers.h" />
+    <ClInclude Include="Weapons.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
