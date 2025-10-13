@@ -86,15 +86,15 @@ void commenceBattle()
 	std::cout << "\nYou step into the arena!! The crowd is wild with anticipation." << std::endl;
 	std::cout << "Your first enemy is a";
 	Sleep(1000); // Waits for 1 second
+	//std::cout << ".";
+	//Sleep(1000);
 	std::cout << ".";
-	Sleep(1000);
-	std::cout << ".";
-	Sleep(1000);
+	//Sleep(1000);
 	std::cout << ". ";
 	Enemy currentEnemy = selectRandomEnemy(); // Selects random enemy and prints it out
 	std::cout << "!";
 	resetBattle(&currentEnemy);
-	Sleep(3000);
+	//Sleep(3000);
 
 	// Local stat variables
 	int localPlayerStrength = 0;
