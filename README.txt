@@ -9,10 +9,3 @@ Controls
 --------
 
 In this game, you mainly navigate through menus by typing 1-3 when prompted to do so.
-
-Known Bugs/Issues
------------------
-
-- When the player's weapon upgrades at the end of a fight, nothing actually happens. Unfortunately, I couldn't find a solution to this in time.
-- The situation is the same for healing - healing currently doesn't do anything.
-- Sometimes, when the player selects the Fight option in the main menu, a blank enemy appears. I haven't found the solution to this for a while, but if you just reload the game or initiate another fight, then a valid enemy should appear.
